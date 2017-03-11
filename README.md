@@ -15,7 +15,7 @@ Starting Todo.DatabaseWorker
 Starting Todo.DatabaseWorker
 Starting Todo.DatabaseWorker
 {:ok, #PID<0.119.0>}
-iex(2)> my_list = Todo.Cache.server_process("my-list")
+iex(2)> my_list = Todo.Cache.server_process("my_list")
 Starting Todo.Server for my-list
 #PID<0.126.0>
 iex(3)> Todo.Server.entries(my_list, {2017, 03, 01})
