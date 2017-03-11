@@ -1,7 +1,7 @@
 defmodule Todo.Database do
   use GenServer
 
-  def start(db_folder) do
+  def start_link(db_folder) do
     IO.puts "Starting Todo.Database (server)"
     GenServer.start_link(__MODULE__, db_folder, name: :database_server)
   end

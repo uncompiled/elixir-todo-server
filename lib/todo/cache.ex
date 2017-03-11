@@ -12,7 +12,6 @@ defmodule Todo.Cache do
 
 
   def init(_) do
-    Todo.Database.start("./persist/")
     {:ok, HashDict.new}
   end
 
