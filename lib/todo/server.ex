@@ -3,7 +3,7 @@ defmodule Todo.Server do
 
   def start(name) do
     IO.puts "Starting Todo.Server for #{name}"
-    GenServer.start(Todo.Server, name)
+    GenServer.start_link(Todo.Server, name)
   end
 
   def add_entry(todo_server, new_entry) do

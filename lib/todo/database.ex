@@ -3,7 +3,7 @@ defmodule Todo.Database do
 
   def start(db_folder) do
     IO.puts "Starting Todo.Database (server)"
-    GenServer.start(__MODULE__, db_folder, name: :database_server)
+    GenServer.start_link(__MODULE__, db_folder, name: :database_server)
   end
 
   def store(key, data) do
